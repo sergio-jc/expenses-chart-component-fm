@@ -16,14 +16,6 @@ data.forEach((element) => {
 let alturaMaxBarpx = 150;
 let maxValue = Math.max(...values);
 
-    /*
-    52.36 -> 200
-    17.45 -> x
-    x = (17.45 * 200px) / 52.36
-
-    alturaActualpx = ( nuevoValor *  alturaMaxBarpx) / maxValor
-    */
-
 let bars = document.querySelectorAll(".chart__bar");
 bars = [...bars];
 
@@ -39,11 +31,13 @@ bars.forEach((bar) => {
 
 
     bar.addEventListener("mouseover", (event)=> {
-        let labelElement = event.target.childNodes[1]; 
-        labelElement.style.display = "block"
+        if (event.target.className !== "chart__bar") return ;
+            let labelElement = event.target.childNodes[1]; 
+            labelElement.style.display = "block"
     })
     bar.addEventListener("mouseout", (event) => {
-        let labelElement = event.target.childNodes[1]; 
-        labelElement.style.display = "none"
+        if (event.target.className !== "chart__bar") return ;
+            let labelElement = event.target.childNodes[1]; 
+            labelElement.style.display = "none"
     })
 });
