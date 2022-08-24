@@ -1,0 +1,13 @@
+@use "variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: variables.$Cream;
+    font-family: variables.$fontBody;
+    font-size: 18px;
+}
