@@ -33,5 +33,19 @@
     &__logo {
         width: 60px;
     }
+    @media (min-width: 600px){
+        height: 126px;
+
+        &__title {
+            font-size: 1em;
+            margin-bottom: 12px;
+        }
+        &__total {
+            font-size: 1.8em;
+        }
+        &__logo {
+            width: 75px;
+        }
+    }
 }
 

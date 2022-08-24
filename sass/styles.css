@@ -42,4 +42,19 @@ body {
 }
 .balance__logo {
   width: 60px;
+}
+@media (min-width: 600px) {
+  .balance {
+    height: 126px;
+  }
+  .balance__title {
+    font-size: 1em;
+    margin-bottom: 12px;
+  }
+  .balance__total {
+    font-size: 1.8em;
+  }
+  .balance__logo {
+    width: 75px;
+  }
 }/*# sourceMappingURL=styles.css.map */
